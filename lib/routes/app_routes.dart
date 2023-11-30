@@ -6,6 +6,10 @@ import 'package:vincent_s_application6/presentation/e_wallet_transaction_details
 import 'package:vincent_s_application6/presentation/register_screen/register_screen.dart';
 import 'package:vincent_s_application6/presentation/inbox_screen/inbox_screen.dart';
 import 'package:vincent_s_application6/presentation/e_wallet_contact_transfer_screen/e_wallet_contact_transfer_screen.dart';
+import 'package:vincent_s_application6/presentation/setting_screen/setting_screen.dart';
+import 'package:vincent_s_application6/presentation/profile_screen/profile_screen.dart';
+import 'package:vincent_s_application6/presentation/help_screen/help_screen.dart';
+import 'package:vincent_s_application6/presentation/e_wallet_topup_screen/e_wallet_topup_screen.dart';
 
 class AppRoutes {
   static const String orderScreen = '/order_screen';
@@ -64,6 +68,9 @@ class AppRoutes {
     registerScreen: (context) => RegisterScreen(),
     inboxScreen: (context) => InboxScreen(),
     eWalletContactTransferScreen: (context) => EWalletContactTransferScreen(),
-
+    settingScreen: (context) => SettingScreen(),
+    profileScreen: (context) => ProfileScreen(),
+    helpScreen: (context) => HelpScreen(),
+    eWalletTopupScreen: (context) => EWalletTopupScreen(),
   };
 }
