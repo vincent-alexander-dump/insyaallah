@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:vincent_s_application6/presentation/order_screen/order_screen.dart';
+import 'package:vincent_s_application6/presentation/after_order_screen/after_order_screen.dart';
+import 'package:vincent_s_application6/presentation/chat_screen/chat_screen.dart';
+import 'package:vincent_s_application6/presentation/e_wallet_credit_card_screen/e_wallet_credit_card_screen.dart';
 import 'package:vincent_s_application6/presentation/e_wallet_points_screen/e_wallet_points_screen.dart';
 import 'package:vincent_s_application6/presentation/login_screen/login_screen.dart';
 import 'package:vincent_s_application6/presentation/e_wallet_transaction_history_screen/e_wallet_transaction_history_screen.dart';
@@ -44,8 +48,7 @@ class AppRoutes {
 
   static const String inboxScreen = '/inbox_screen';
 
-  static const String subscribeScreen =
-      '/subscribe_screen';
+  static const String subscribeScreen = '/subscribe_screen';
 
   static const String eWalletTopupScreen = '/e_wallet_topup_screen';
 
@@ -61,10 +64,15 @@ class AppRoutes {
   static const String eWalletCreditCardScreen = '/e_wallet_credit_card_screen';
 
   static Map<String, WidgetBuilder> routes = {
+    orderScreen: (context) => OrderScreen(),
+    afterOrderScreen: (context) => AfterOrderScreen(),
     eWalletPointsScreen: (context) => EWalletPointsScreen(),
     loginScreen: (context) => LoginScreen(),
-    eWalletTransactionHistoryScreen: (context) => EWalletTransactionHistoryScreen(),
-    eWalletTransactionDetailsScreen: (context) => EWalletTransactionDetailsScreen(),
+    eWalletTransactionHistoryScreen: (context) =>
+        EWalletTransactionHistoryScreen(),
+    eWalletTransactionDetailsScreen: (context) =>
+        EWalletTransactionDetailsScreen(),
+    chatScreen: (context) => ChatScreen(),
     registerScreen: (context) => RegisterScreen(),
     inboxScreen: (context) => InboxScreen(),
     eWalletContactTransferScreen: (context) => EWalletContactTransferScreen(),
@@ -72,5 +80,6 @@ class AppRoutes {
     profileScreen: (context) => ProfileScreen(),
     helpScreen: (context) => HelpScreen(),
     eWalletTopupScreen: (context) => EWalletTopupScreen(),
+    eWalletCreditCardScreen: (context) => EWalletCreditCardScreen(),
   };
 }
