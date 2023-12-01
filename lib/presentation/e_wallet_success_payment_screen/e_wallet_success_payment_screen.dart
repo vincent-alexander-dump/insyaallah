@@ -23,7 +23,8 @@ class EWalletSuccessPaymentScreen extends StatelessWidget {
                           style: theme.textTheme.titleLarge)),
                   SizedBox(height: 99.v),
                   Text("Transaksi anda sukses!",
-                      style: CustomTextStyles.displayLargeBlack900),
+                      style: CustomTextStyles.displayLargeBlack900,
+                      textAlign: TextAlign.center,),
                   SizedBox(height: 33.v),
                   CustomImageView(
                       imagePath: ImageConstant.imgApproval,
