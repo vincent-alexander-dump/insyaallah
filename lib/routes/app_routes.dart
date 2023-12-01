@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vincent_s_application6/presentation/main_screen_page/main_screen_page.dart';
 import 'package:vincent_s_application6/presentation/order_screen/order_screen.dart';
 import 'package:vincent_s_application6/presentation/after_order_screen/after_order_screen.dart';
 import 'package:vincent_s_application6/presentation/chat_screen/chat_screen.dart';
@@ -11,9 +12,12 @@ import 'package:vincent_s_application6/presentation/register_screen/register_scr
 import 'package:vincent_s_application6/presentation/inbox_screen/inbox_screen.dart';
 import 'package:vincent_s_application6/presentation/e_wallet_contact_transfer_screen/e_wallet_contact_transfer_screen.dart';
 import 'package:vincent_s_application6/presentation/setting_screen/setting_screen.dart';
+import 'package:vincent_s_application6/presentation/promos_screen/promos_screen.dart';
 import 'package:vincent_s_application6/presentation/profile_screen/profile_screen.dart';
+import 'package:vincent_s_application6/presentation/subscribe_screen/subscribe_screen.dart';
 import 'package:vincent_s_application6/presentation/help_screen/help_screen.dart';
 import 'package:vincent_s_application6/presentation/e_wallet_topup_screen/e_wallet_topup_screen.dart';
+import 'package:vincent_s_application6/presentation/e_wallet_bank_transfer_screen/e_wallet_bank_transfer_screen.dart';
 
 class AppRoutes {
   static const String orderScreen = '/order_screen';
@@ -64,6 +68,7 @@ class AppRoutes {
   static const String eWalletCreditCardScreen = '/e_wallet_credit_card_screen';
 
   static Map<String, WidgetBuilder> routes = {
+    mainScreenPage: (context) => MainScreenPage(),
     orderScreen: (context) => OrderScreen(),
     afterOrderScreen: (context) => AfterOrderScreen(),
     eWalletPointsScreen: (context) => EWalletPointsScreen(),
@@ -74,12 +79,15 @@ class AppRoutes {
         EWalletTransactionDetailsScreen(),
     chatScreen: (context) => ChatScreen(),
     registerScreen: (context) => RegisterScreen(),
+    promosScreen: (context) => PromosScreen(),
     inboxScreen: (context) => InboxScreen(),
+    subscribeScreen: (context) => SubscribeScreen(),
     eWalletContactTransferScreen: (context) => EWalletContactTransferScreen(),
     settingScreen: (context) => SettingScreen(),
     profileScreen: (context) => ProfileScreen(),
     helpScreen: (context) => HelpScreen(),
     eWalletTopupScreen: (context) => EWalletTopupScreen(),
+    eWalletBankTransferScreen: (context) => EWalletBankTransferScreen(),
     eWalletCreditCardScreen: (context) => EWalletCreditCardScreen(),
   };
 }
