@@ -169,10 +169,10 @@ class EWalletBankTransferScreen extends StatelessWidget {
           backConfirm(context);
         });
   }
-
-  back(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.eWalletTopupScreen);
+    backConfirm(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.eWalletSuccessPaymentScreen);
   }
+
 
   PreferredSizeWidget appBar(BuildContext context) {
     return CustomAppBar(
@@ -188,7 +188,7 @@ class EWalletBankTransferScreen extends StatelessWidget {
         styleType: Style.bgFill);
   }
 
-  backConfirm(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.eWalletSuccessPaymentScreen);
+  back(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.eWalletTopupScreen);
   }
 }

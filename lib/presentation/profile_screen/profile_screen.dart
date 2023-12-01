@@ -21,8 +21,6 @@ class ProfileScreen extends StatelessWidget {
 
   final TextEditingController emailController = TextEditingController();
 
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
     mediaQueryData = MediaQuery.of(context);
@@ -32,7 +30,6 @@ class ProfileScreen extends StatelessWidget {
             appBar: appBar(context),
             body: SingleChildScrollView(
             child: Form(
-                key: _formKey,
                 child: Container(
                     width: double.maxFinite,
                     padding: EdgeInsets.symmetric(vertical: 10.v),

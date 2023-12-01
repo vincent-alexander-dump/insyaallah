@@ -18,7 +18,7 @@ import 'package:vincent_s_application6/presentation/subscribe_screen/subscribe_s
 import 'package:vincent_s_application6/presentation/help_screen/help_screen.dart';
 import 'package:vincent_s_application6/presentation/e_wallet_topup_screen/e_wallet_topup_screen.dart';
 import 'package:vincent_s_application6/presentation/e_wallet_bank_transfer_screen/e_wallet_bank_transfer_screen.dart';
-
+import 'package:vincent_s_application6/presentation/e_wallet_main_screen/e_wallet_main_screen.dart';
 class AppRoutes {
   static const String orderScreen = '/order_screen';
 
@@ -79,6 +79,7 @@ class AppRoutes {
         EWalletTransactionDetailsScreen(),
     chatScreen: (context) => ChatScreen(),
     registerScreen: (context) => RegisterScreen(),
+    eWalletMainScreen: (context) => EWalletMainScreen(),
     promosScreen: (context) => PromosScreen(),
     inboxScreen: (context) => InboxScreen(),
     subscribeScreen: (context) => SubscribeScreen(),
